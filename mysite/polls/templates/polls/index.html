@@ -1,0 +1,12 @@
+{% if user.is_authenticated %}Hello, {{user.username}}. {% endif %}
+{% if server_list %}
+    <ul>
+    {% for server in server_list %}
+        <li><a href="{{server.server_url }}/">{{ server.server_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No servers are available.</p>
+{% endif %}
+
+<a href="/admin">Admin Site </a>
