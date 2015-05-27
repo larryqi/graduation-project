@@ -1,2 +1,2 @@
 # graduation-project
-a simple web portal for my graduation project
+a simple web portal for my graduation project using Django
